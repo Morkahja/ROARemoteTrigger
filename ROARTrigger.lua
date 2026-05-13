@@ -78,56 +78,71 @@ local ROGU = {
 -- [2.1] Data Pools
 -------------------------------------------------
 local inviteText = {
-  "<ROAR> Friendly hearts and curious minds, we walk for wonder not for signs, no counting meters no racing clocks, just steady boots on winding rocks, when moments bloom in ember light, we lift our voices to the night.",
-  "<ROAR> That rolling sound across the plain is not thundercloud nor storm nor rain, it is laughter ringing bright and raw from quests well fought and things we saw, if that deep echo feels like home, step near the fire no need to roam.",
-  "<ROAR> We hunt for stories not for speed, for treasure wrapped in laugh and deed, no pressure set no breath held tight, just open road and hearthfire light, and when the tale turns bold and bright, we roar it proudly through the night.",
-  "<ROAR> The roar gathers, mugs held high, for fallen foes and painted sky, for clumsy pulls and epic loot, for triumph earned in dusty boot, steady hearts and open door, all are welcome to the roar.",
-  "<ROAR> Casual steps and thunder cheer, shared old tales and friends held near, if wandering roads make your spirit sing and noise feels like a natural thing, then by the forge and foaming glass you have found your kin at last.",
-  "<ROAR> Quests and caverns blades and lore, battlefields and tavern floor, stories stirred in iron stew, we play for meaning deep and true, not to impress with shining name but to set the coals of joy aflame.",
-  "<ROAR> If you sit for sky and song, for quiet paths that wind along, for wonder bright and laughter free, then pull a chair and sit with me, no ledger tallied no score to chase, just world enough and shared hearthspace.",
-  "<ROAR> Inspire first and boast not loud, stand steady not above the crowd, curious souls in warm embrace, shared adventure unhurried pace, and when the tankards strike the floor we answer back with one great roar.",
-  "<ROAR> Explorers bright and wanderers wide, bring your craft and stand beside, respect the road create with care, let your story fill the air, lift your voice and let it soar, let Azeroth resound with ROAR.",
-  "<ROAR> Curiosity in common hand, respect the ground on which we stand, shared stories told in firelight glow, step by step the long roads go, if that same taste is in your core, come walk the miles with ROAR.",
-  "<ROAR> No rushing drum no frantic cry, we let the seasons wander by, we roam we toast we laugh out loud, unburdened by the pressing crowd, good company and spirits sure and roars that echo strong and pure.",
-  "<ROAR> For those who lose themselves with grace in forest shade or desert space, who read the lines and hear the song and do not mind the road is long, there is story ale and open door and always room for one more roar.",
-  "<ROAR> We chase the spark in fleeting glance, in dungeon crawl and roadside chance, not numbers tallied cold and dry but laughter flung against the sky, if moments matter more than score then you belong with ROAR.",
-  "<ROAR> Azeroth is living ground not boxes checked nor trophies found, so walk it slow let wonder start and roar when fire fills your heart, for when a moment turns out fine we mark it loud with ale and sign.",
-  "<ROAR> From hushed twilight to cheering flame we share the rhythm just the same, soft footfalls battle cries, warm embraces open skies, in every tone from low to high together let our voices fly.",
-  "<ROAR> Explorers crafters blades held fast, storytellers of future and past, collectors dreamers gentle might, all find a seat in hearthfire light, pull a chair and stay a while, we roar in grief we roar in smile.",
-  "<ROAR> At your own pace the road may bend with steady kin and honest friend, share the weight and share the view, let the wide world open to you, if that is how you choose to soar then step your boots inside our door.",
-  "<ROAR> Small triumphs vast victories, quiet glances grand histories, if it stirs the soul at all we answer with a thunder call, add your voice both fierce and clear and make the mountains lean to hear.",
-  "<ROAR> Adventure shared tastes rich and deep like ale long brewed and well earned sleep, so wander wide where wild winds sweep and promises are ours to keep, raise your mug and claim your part, roar from iron roast and heart.",
+"<ROAR> Friendly hearts and muddy boots, campfire songs and tangled routes, no racing clocks no joyless chore, just wandering roads and one more roar.",
 
-  "<ROAR> We roam, we explore, we laugh and adore, come join the pride and roar some more.",
-  "<ROAR> Not in a rush, just wander and cheer, come join us friend, you are welcome right here.",
-  "<ROAR> We quest and we play, then roar at the day, come join our pride and stay your way.",
-  "<ROAR> Through valleys and lore, we wander some more, come join the adventure and let out a roar.",
-  "<ROAR> From sunrise to night, we share the delight, come join ROAR and play it just light.",
-  "<ROAR> Warning: joining may cause spontaneous roars, shared adventures, and unexpected joy. You are welcome!",
-  "<ROAR> No need to race, just find your pace, come join our guild, this is the place.",
-  "<ROAR> Through hill and shore, we seek the lore, come join the fun and roar once more.",
-  "<ROAR> We take it slow, let stories grow, come join ROAR and let it flow.",
+"<ROAR> Across the hills the laughter rolls through dungeon halls and snowy knolls, not thundercloud nor battle cry, just friends beneath an open sky.",
 
-  "<ROAR> Ask the question, cross the span, build bright bridges where you stand. Curiosity lights the door, step inside and roar some more.",
-  "<ROAR> Strength with respect rings clear and wide, a steady thunder none can hide. Bring that sound and make it soar, join your voice within the ROAR.",
-  "<ROAR> Bonds in trial, bonds in flame, outlast glory, outlast fame. Walk with us through thick and thin, and find the joy that waits within.",
-  "<ROAR> Tread the land with mindful stride, let care and courage be your guide. The world remembers gentle might, come roam with us in shared delight.",
-  "<ROAR> Choose a meaning bright and clear, hold it close and keep it near. In darkest hours we still explore, come shape the tale we are living for.",
-  "<ROAR> Borrowed hours still can shine, lift a mug and cross the line. If joy calls out across the floor, answer back with a fearless roar.",
-  "<ROAR> Tell your story by the flame, let it wander, let it change. Stories shared grow strong and wide, come speak yours beside the light.",
-  "<ROAR> When drums fall still and night grows deep, joy is what the spirits keep. Bring your laughter, bright and pure, and let it echo ever sure.",
-  "<ROAR> Old traditions breathe and grow when new voices join the flow. Bring your song and let it ring, add your note to everything.",
-  "<ROAR> Grace is carried hand in hand, across each sea and shifting sand. Walk with us through loss and lore, and find your place within the ROAR.",
+"<ROAR> We hunt for stories not for speed, for strange mishaps and reckless deed, for roadside fires and ale poured warm, and roaring loud through every storm.",
 
-  "<ROAR> Gold may fade and coins may fall, but good names echo through it all. Build your tale with steady core, and let it thunder with the ROAR.",
-  "<ROAR> A shared feast and open door, brightens nights and offers more. Sit and stay and take your part, bring your hunger and your heart.",
-  "<ROAR> Crowns may crumble into dust, but laughter shared is iron trust. Come forge your joy in flame and ale, and let it outlast any tale.",
-  "<ROAR> When doubt once whispered in the street, we answered warm and kept our feet. Choose the road where kindness leads, and walk with us in word and deeds.",
-  "<ROAR> Stone stands firm and so do we, returning often, faithfully. Leave your mark where friends endure, the deeper path is slow and sure.",
-  "<ROAR> Keep the fire against the cold, let stories rise and hands be bold. In leaner years and brighter days, we gather close and lift our praise.",
-  "<ROAR> The sky moves slow yet never strays, so shape your life in wandering ways. No rush required, no race to run, just steady hearts and shared sun.",
-  "<ROAR> Stand in silence, speak with care, lift another from despair. In balanced steps and voices strong, we find the place where we belong.",
-  "<ROAR> Ask and build and dare to try, let bright ideas multiply. Shared and tested, shaped by cheer, that is how we gather here."
+"<ROAR> Tankards high and embers bright, clumsy pulls deep in the night, dusty boots and spirits sure, all are welcome to the roar.",
+
+"<ROAR> Slow old roads and thunder cheer, familiar voices drawing near, if noisy hearts make you feel warm, then step beside the roaring storm.",
+
+"<ROAR> Quests and caverns blades and lore, laughter shaking tavern floor, we play for moments rich and true, not hollow praise or numbers blue.",
+
+"<ROAR> Sit awhile for sky and song, for winding roads that drift along, no score to chase no race to win, just firelight glow and wandering kin.",
+
+"<ROAR> Inspire first and boast no more, lift each other from the floor, steady souls in ember light, roaring proudly through the night.",
+
+"<ROAR> Wanderers wide and dreamers strange, crafters with inventions deranged, bring your story scar and snore, let Azeroth resound with ROAR.",
+
+"<ROAR> Curiosity hand in hand, steady feet on living land, stories carried mile by mile, roaring loud all the while.",
+
+"<ROAR> No frantic pace no joyless grind, just wandering roads and open mind, good company and spirits bright, roaring warm into the night.",
+
+"<ROAR> For those who lose themselves with grace in forest path or desert space, who read the lines and hear the lore, there is always room for more.",
+
+"<ROAR> We chase the spark in fleeting glance, in roadside joke and dungeon chance, not numbers stacked in lifeless score, but moments worth a mighty roar.",
+
+"<ROAR> Azeroth is living ground not trophies stacked nor meters crowned, so walk it slow and hearts ignite, then roar beneath the stars tonight.",
+
+"<ROAR> From quiet dusk to battle cry, from tavern cheer to storming sky, every voice both rough and true adds another flame to you.",
+
+"<ROAR> Explorers dreamers blades held fast, storytellers future and past, all find warmth beside the door, all find welcome in the roar.",
+
+"<ROAR> At your own pace the long roads bend with steady kin and honest friend, share the burden share the view, let the wild world open through.",
+
+"<ROAR> Small triumphs grand victories, muddy wipes and memories, if it stirs the soul at all we answer with a thunder call.",
+
+"<ROAR> Shared adventures deep and bright, long earned rest by firelight, wander wide where wild winds soar, then raise your mug and join the roar.",
+
+"<ROAR> We roam we laugh we quest once more, getting lost from shore to shore, not in haste but full of cheer, roaring loud for all to hear.",
+
+"<ROAR> No need to rush no need to race, just find your boots a steady pace, the road is long the fire is warm, come join the loud and laughing storm.",
+
+"<ROAR> Through valleys deep and ruins old, through battle smoke and tavern gold, we wander far with spirits bright, then roar together through the night.",
+
+"<ROAR> Warning friend before you stay: strange adventures may come your way, side effects include loud cheer, battle cries and too much beer.",
+
+"<ROAR> Through hill and shore we seek the lore, then somehow pull three packs more, we wipe we laugh we charge once more, and roar again like before.",
+
+"<ROAR> We take it slow let stories grow, through snowfall path and ember glow, no perfect plan no polished score, just living loud within the roar.",
+
+"<ROAR> Ask the question cross the span, build strange bridges while you can, curiosity lights the door, step inside and join the roar.",
+
+"<ROAR> Strength with respect rings clear and wide, steady thunder side by side, bring your voice both fierce and warm, and join the loud unbroken storm.",
+
+"<ROAR> Bonds in trial bonds in flame, outlast glory outlast fame, walk together thick and thin, and let the roaring laughter in.",
+
+"<ROAR> Tell your story by the flame, let it wander let it change, stories shared grow rich and strong, carried by the roaring song.",
+
+"<ROAR> Old traditions breathe and grow when fresh new voices join the flow, bring your tale and let it soar, add your thunder to the roar.",
+
+"<ROAR> Gold may fade and crowns may fall, but roaring laughter outlives all, build your tale with steady core, and let it echo evermore.",
+
+"<ROAR> Shared feast and open door, muddy boots upon the floor, sit and stay and rest awhile, roaring loud through grief and smile.",
+
+"<ROAR> The sky moves slow yet never strays, so shape your life in wandering ways, no race to win no clock to fear, just steady hearts and roaring cheer."
 }
 
 -------------------------------------------------
