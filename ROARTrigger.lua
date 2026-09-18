@@ -1,11 +1,11 @@
--- RoarGuild v1.32-Epoch
--- Project Epoch / Wrath 3.3.5 client
+-- RoarGuild v1.32
+-- Wrath 3.3.5 client
 -- SavedVariables: ROGUDB
 
 -------------------------------------------------
 -- [0] Constants
 -------------------------------------------------
-local ADDON_VERSION = "1.32-Epoch"
+local ADDON_VERSION = "1.32"
 
 local ROAR_REMINDER_INTERVAL = 420
 local ROAR_REMINDER_CD = 73

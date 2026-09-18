@@ -1,6 +1,6 @@
 # ROARTrigger
 
-ROARTrigger is a Project Epoch addon for the Wrath 3.3.5 client.
+ROARTrigger is an add-on for the Wrath 3.3.5 client.
 
 It triggers battle emotes when configured action bar slots are pressed.
 
@@ -8,7 +8,6 @@ This addon does not detect confirmed successful spell casts. It detects action b
 
 ## Requirements
 
-- Project Epoch
 - Wrath 3.3.5 client
 - AddOns enabled in the character select screen
 
@@ -17,7 +16,7 @@ This addon does not detect confirmed successful spell casts. It detects action b
 Place the addon folder here:
 
 ```text
-epoch-live\Interface\AddOns\ROARTrigger
+World of Warcraft\Interface\AddOns\ROARTrigger
 ```
 
 The folder must contain:
@@ -34,7 +33,7 @@ The folder name, `.toc` file name, and Lua file reference must match:
 ## Interface: 30300
 ## Title: ROARTrigger
 ## Notes: Triggers battle emotes when you press specific action bar slots. Supports multiple per-character profiles and per-slot cooldown/chance.
-## Version: 1.32-Epoch
+## Version: 1.32
 ## SavedVariables: ROGUDB
 
 ROARTrigger.lua
@@ -545,13 +544,13 @@ Press slot 5 again.
 Version:
 
 ```text
-1.32-Epoch
+1.32
 ```
 
 Client target:
 
 ```text
-Project Epoch / Wrath 3.3.5
+Wrath 3.3.5
 ```
 
 Interface:
